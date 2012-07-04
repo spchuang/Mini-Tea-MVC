@@ -138,6 +138,8 @@ Usage
 	
 8. Set up Global function in helper/helper_func.php
 
+9. Connect by using ?controller=home&method=method_name
+
 Requirements
 ------------
 *  PHP version 5.1.6 or newer
