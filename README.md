@@ -97,6 +97,7 @@ Usage
 		$this->load->viewFile("home", $data);
 	}
     ```
+    
 7.  Set up custom Session class
 	```php
 	<?php
@@ -114,10 +115,10 @@ Usage
 		}
 	
 	}
-
 	```
+	 
 7.  Load Session class and call validate function
-		```php
+	```php
 	class Home extends Controller
 	{
 		public function __construct()
@@ -133,8 +134,8 @@ Usage
 				die("You are not authenticated to view the page! :(");
 		}
 	}
-
 	```
+	
 8. Set up Global function in helper/helper_func.php
 
 Requirements
