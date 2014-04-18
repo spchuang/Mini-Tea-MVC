@@ -64,7 +64,7 @@ if(isset($_GET[DEFAULT_METHOD_NAME])){
 if (method_exists($FY, $method)){
 	call_user_func_array(array($FY,$method), array());
 }else{
-	die("the method {$method} doesn't exists in {$FY}...");
+	die("the method ".$method." doesn't exists...");
 }
 
 // close the DB connection?

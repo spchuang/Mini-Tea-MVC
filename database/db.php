@@ -42,7 +42,7 @@ class DB
 	public function query($query){ 
 		if($r = $this->mysqli->query($query)){
 			$rows = array();
-			while($row = $r->fetch_assoc()){
+			while(is_object($r) && $row = $r->fetch_assoc()){
 				$rows[]= $row;
 			}
 			$result = new DB_result($rows, $query);
